@@ -1,0 +1,82 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+ ul {
+    padding: 20px;
+    border: 1px solid #a5a3a3;
+    margin-left: 20px;
+    margin-right: 10px;
+ }
+
+ li {
+    font-weight: bold;
+ }
+
+ .comment-box {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.comment-box1 {
+    background-color: #f9f9f9;
+    padding: 60px;
+    border: 1px solid #ccc;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+        background-color: #333; /* Background color for the shape */
+        padding: 80px;
+        display: inline-block; /* Make the h2 element inline-block to wrap around the content */
+        border-radius: 20px; 
+        margin: 20px;
+        color: white;
+}
+
+button {
+    grid-column: 2; 
+    margin: 10px auto; 
+    padding: 5px 20px; 
+    font-size: 16px;
+    display: block;
+    width: fit-content;
+    position: relative;
+    top: -100px;
+}
