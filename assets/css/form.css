@@ -33,27 +33,38 @@ footer {
     position: relative;
 }
 
- ul {
+ section {
     padding: 20px;
     border: 2px solid #a5a3a3;
     margin-left: 20px;
     margin-right: 10px;
  }
 
- li {
+ label {
     font-weight: bold;
  }
 
- .comment-box {
-    background-color: #f9f9f9;
-    padding: 10px;
+ input {
+    background-color: white;
+    border-radius: 5px;
     border: 1px solid #ccc;
-}
+    font-size: 1em;
+    height: 45px;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    padding: 8px 8px 8px 8px;
+    transition-delay: 0s, 0s;
+    transition-duration: 0.2s, 0.2s;
+    transition-timing-function: ease, ease;
+    width: 100%;
+  }
 
-.comment-box1 {
-    background-color: #f9f9f9;
-    padding: 60px 10px;
-    border: 1px solid #ccc;
+
+.inputContent {
+    padding: 60px 10px;   
+    vertical-align: top;
 }
 
 h2 {
