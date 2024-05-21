@@ -65,27 +65,20 @@ p {
  }
 
  /* Dark mode styles */
-.dark body {
-    background-color: #333333; /* Dark background color */
-    color: #ffffff; /* Light text color */
-}
-
-.dark header {
-    background-color: #222; /* Dark header background color */
-}
-
 .dark main {
-    background-color: #444; /* Dark main content background color */
-}
-
-.dark footer {
-    background-color: #222; /* Dark footer background color */
+    background-color: #333333; 
 }
 
 .dark p {
-    color: #ffffff; /* Light text color for paragraphs in dark mode */
+    background-color: #333333;
+    color: #ffffff; 
 }
 
 .dark h2, .dark h3 {
-    color: #ffffff; /* Light text color for headings in dark mode */
+    background-color: #333333;
+    color: #ffffff; 
+}
+
+.dark footer {
+    margin-top: 0;
 }
