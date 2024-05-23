@@ -24,13 +24,14 @@ main {
     align-items: center;
 }
 
-footer {
-    grid-area: footer;
+#position {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
  section {
@@ -63,8 +64,7 @@ footer {
 
 
 .inputContent {
-    padding: 60px 10px;   
-    vertical-align: top;
+    padding: 60px 10px;  
 }
 
 h2 {
