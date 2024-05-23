@@ -14,32 +14,29 @@ themeSwitcher.addEventListener('click', function () {
   }
 });
 
-
-
 const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
-const latestPost = blogPosts[blogPosts.length - 1];
 
-const blogPostsContainer = document.querySelector('#blogPostsContainer');
+const blogContainer = document.querySelector('#blogContainer');
 
-blogPostsContainer.innerHTML = '';
+for (let i = 0; i < blogPosts.length; i++) {
+  const blogPost = blogPosts[i];
 
-const postElement = document.createElement('section');
-postElement.classList.add('blog-post');
+  const postEl = document.createElement('section');
+  postEl.classList.add('blog-post');
 
-const titleElement = document.createElement('h2');
-titleElement.textContent = latestPost.blogTitle;
+  const titleEl = document.createElement('h2');
+  titleEl.textContent = blogPost.blogTitle;
 
-const contentElement = document.createElement('p');
-contentElement.textContent = latestPost.blogContent;
-
-
-const authorElement = document.createElement('h3');
-authorElement.textContent = `Author: ${latestPost.username}`;
-
-postElement.appendChild(titleElement);
-postElement.appendChild(contentElement);
-postElement.appendChild(authorElement);
-
-blogPostsContainer.appendChild(postElement);
+const contentEl = document.createElement('p');
+contentEl.textContent = blogPost.blogContent;
 
 
+const authorEl = document.createElement('h3');
+authorEl.textContent = `Author: ${blogPost.username}`;
+
+postEl.appendChild(titleEl);
+postEl.appendChild(contentEl);
+postEl.appendChild(authorEl);
+
+blogContainer.appendChild(postEl);
+}
