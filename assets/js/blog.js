@@ -22,7 +22,7 @@ for (let i = 0; i < blogPosts.length; i++) {
   const blogPost = blogPosts[i];
 
   const postEl = document.createElement('section');
-  postEl.classList.add('blog-post');
+  postEl.classList.add('blogpost');
 
   const titleEl = document.createElement('h2');
   titleEl.textContent = blogPost.blogTitle;
